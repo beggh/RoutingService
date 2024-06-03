@@ -2,7 +2,7 @@
 This repository explains how to optimize route of deliveryPerson beginning from source and delivering from Restuarants to Customers
 
 # Assumptions
-- 2 customers and 2 restuarants which can be extended to N customers, restaurants
+- 2 customers, 2 restuarants and 1 delivery person which can be extended to N customers, restaurants
 - A predefined source as starting point for delivery person
 - Deliveryperson, Restuarant1 and Restuarant2 were informed about these orders at
 the exact same time and all of them confirm on doing it immediately. Also, for travel time between 
