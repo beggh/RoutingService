@@ -15,3 +15,6 @@ basically ignore actual road distance or confirmation delays everywhere)
 # How to test
 - Exposes an endpoint which prints path in sequence of visited
   - ```curl --location 'localhost:8080/routingService/api/getPath'```
+
+# Improvements
+- Customers and Restuarants can be added by using post api and storing pair in the set in the repository layer
