@@ -3,14 +3,13 @@ package com.example.RoutingService.controller;
 import com.example.RoutingService.entity.Location;
 import com.example.RoutingService.entity.RestuarantCustomerPair;
 import com.example.RoutingService.service.RoutingService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
 @RestController
-@RequestMapping("/api/best-route")
+@RequestMapping("/routingService/api")
 public class RoutingController {
     private final RoutingService service;
 
@@ -18,7 +17,7 @@ public class RoutingController {
         this.service = new RoutingService();
     }
 
-    @GetMapping()
+    @GetMapping("/getPath")
     public List<Location> findOptimalPath() {
         Location source = new Location(0,0,"S");
         RestuarantCustomerPair[] pairs = new RestuarantCustomerPair[]{
