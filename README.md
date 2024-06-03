@@ -14,4 +14,4 @@ basically ignore actual road distance or confirmation delays everywhere)
 
 # How to test
 - Exposes an endpoint which prints path in sequence of visited
-  - curl --location 'localhost:8080/routingService/api/getPath'
+  - ```curl --location 'localhost:8080/routingService/api/getPath'```
